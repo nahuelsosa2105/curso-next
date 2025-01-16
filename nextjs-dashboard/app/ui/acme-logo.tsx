@@ -5,9 +5,12 @@ export default function AcmeLogo() {
   return (
     <div
       className={`${lusitana.className} flex flex-row items-center leading-none text-white`}
+      aria-label="Acme Logo"
     >
-      <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" />
+      <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" aria-hidden="true" />
       <p className="text-[44px]">Acme</p>
     </div>
   );
 }
+
+
